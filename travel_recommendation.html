@@ -4,30 +4,41 @@
 <head>
     <meta charset="UTF-8">
     <title>Travel Recommendation</title>
-    <link rel="stylesheet" href="./navigation.css">
+    <link rel="stylesheet" href="./base.css">
+    <link rel="stylesheet" href="./nav.css">
+    <link rel="stylesheet" href="./main.css">
 </head>
 
 <body>
-    <nav>
-        <div class="topnav" id="myTopnav">
-            <a href="./travel_recommendation.html" class="active" id="home">Home</a>
-            <a href="./about.html">About us</a>
-            <a href="./contact.html">Contact us</a>
-            <div class="search-container">
-                <input type="text" placeholder="Enter a destination..." id="search">
-                <button id="clearButton" class="button button4">Clear</button>
-                <button id="searchButton" class="button button4">Search</button>
+    <div class="bg">
+        <nav>
+            <div class="topnav" id="myTopnav">
+                <a href="./travel_recommendation.html" class="active" id="home">Home</a>
+                <a href="./about.html">About us</a>
+                <a href="./contact.html">Contact us</a>
+                <div class="search-container">
+                    <input type="text" placeholder="Enter a destination..." id="search">
+                    <button id="clearButton" class="button button4">Clear</button>
+                    <button id="searchButton" class="button button4">Search</button>
+                </div>
+            </div>
+        </nav>
+        <div id="gradient">
+            <div class="row">
+                <div class="column">
+                    <h1>EXPLORE DREAM DESTINATION</h1>
+                    <p style="margin-left: 200px; margin-top: 100px;">It encourages exploration of unfamiliar
+                        territories, embracing diverse cultures
+                        and landscapes, while pursuing the desired destination that captivates the heart and
+                        ignites a sense of wonder.</p>
+                    <button class="btn" style="margin-left: 200px; margin-top: 20px;">BOOK NOW</button>
+                </div>
+                <div class="column">
+                    <div id="items" class="scroll"></div>
+                </div>
             </div>
         </div>
-    </nav>
-    <div id="gradient">
-        <div class="container">
-            <h1>EXPLORE DREAM DESTINATION</h1>
-            <p>It encourages exploration of unfamiliar territories, embracing diverse cultures
-                and landscapes, while pursuing the desired destination that captivates the heart and ignites a sense of
-                wonder.</p>
-        </div>
-    </div>
+    </div>x
     <script src="./travel_recommendation.js"></script>
 </body>
 

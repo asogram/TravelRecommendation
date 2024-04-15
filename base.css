@@ -1,0 +1,30 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+}
+
+.bg {
+    background-image: url("travel-tips-feature.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#gradient {
+    width: 100%;
+    position: absolute;
+    top: 55px;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.553), rgba(0, 0, 0, 0));
+}
+
+p {
+    color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 10px 10px 10px 20px;
+    border-radius: 12px;
+    font-family: 'Courier New', Courier, monospace;
+}
