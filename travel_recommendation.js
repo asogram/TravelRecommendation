@@ -38,6 +38,18 @@ function searchTask() {
                                         <button class="btn">Visit</button>
                                     </div>`;
                     });
+                }
+                else if (text == 'country' || text == 'countries') {
+                    json['countries'].forEach((item) => {
+                        item["cities"].forEach((city) => {
+                            results += `<div class="card">
+                                            <img src="${city.imageUrl}" alt="${city.name}" style="width:100%;border-radius: 12px 12px 1px 1px;">
+                                            <h4>${city.name}</h4>
+                                            <h5>${city.description}</h5>
+                                            <button class="btn">Visit</button>
+                                        </div>`;
+                        })
+                    });
                 } else {
                     json["countries"].forEach((item) => {
                         if (text == item.name.toLowerCase()) {
